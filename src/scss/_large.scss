@@ -1,0 +1,54 @@
+/* ----------------------------- Body ----------------------- */
+
+body {
+  // background-image: url(../assets/images/polonez_car.png);
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+}
+
+// div#wrapper {
+//   max-width: 80rem;
+//   margin: auto;
+//   box-shadow: 0 0 10px #000000;
+//   background-color: white;
+// }
+
+/* ----------------------------- Navigation ----------------------- */
+
+nav {
+  ul {
+    margin-left: $space;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  ul li {
+    width: auto;
+  }
+  ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  ul li a {
+    padding: .5rem 1rem;
+  }
+} // end of nav
+main {
+  figure.photo {
+    width: 25%-$spacedbl;
+    margin: .5rem $space;
+    float: left;
+  }
+  div.blog article {
+    float: left;
+    width: 33.3%-$spacedbl;
+  }
+  div.blog article:nth-child(2n+1) {
+    clear: none;
+  }
+  div.blog article:nth-child(3n+1) {
+    clear: left;
+  }
+}
